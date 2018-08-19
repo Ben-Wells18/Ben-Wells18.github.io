@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BenWells.com</title>
+	<link rel="stylesheet" type="text/css" href="portfolio.css">
+	<link href="https://fonts.googleapis.com/css?family=Oswald|Raleway" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+</head>
+<body>
+<nav>
+	<a href="#" id="mobile-nav-toggle">
+		<div id="one"></div>
+		<div id="two"></div>
+		<div id="three"></div>
+	</a>
+<!-- THE NAV BAR TOGGLE BUTTON WILL ONLY WORK IF THE NAV WRAPPER IS NOT MORE SPECIFIC THAN THE CLASS YOU WILL APPLY USING JAVASCRIPT, MAKE SURE YOU USE A CLASS -->
+	<div class="nav-items-wrapper"> 
+		<a href="#home"> <div class="nav-item">Home</div> </a>
+		<a href="#about"> <div  class="nav-item">About</div> </a>
+		<a href="#skills"> <div class="nav-item">Skills</div> </a>
+		<a href="#projects"> <div class="nav-item">Projects</div> </a>
+		<a href="#contact"> <div class="nav-item">Contact</div> </a>
+	</div>
+</nav>
+<main id="content wrapper">
+<!-- Home Page -->
+<section id="home">
+	<div id="home-content">
+		<h1>Hello, my name is Ben Wells and 
+		I'm an aspiring front end developer</h1>
+		<a id="home-btn-link" href="#projects">
+			<button id="home-btn">View my projects</button>
+		</a>
+	</div>
+</section>
+
+<!-- About me -->
+<section id="about">
+	<h1 id="about-me">About me</h1>
+
+	<div id="points-flex-wrapper">
+		<div class="point-wrapper">
+			<h2> Self Taught </h2>
+			<p> I have taught myself the fundamentals of front end web development using a mixture of online courses and consulting with others on forums such as stack overflow. I believe this demonstrates that I have both the passion and drive to continue to improve my knowledge of technologies as well as learn new ones as they release.</p>
+		</div>
+		<div class="point-wrapper">
+			<h2> Fast Learner </h2>
+			<p>This trait has benefitted me greatly when taking in the vast amount of information that comes with learning web development. I am able to understand concepts quickly and put them into practice. A career in web development means I would always be learning, and I feel being a quick learner is incredibly benefitial. </p>
+		</div>
+		<div class="point-wrapper">
+			<h2> Team Player </h2>
+			<p>My time at university developed valuable team working skills that continue to benefit me in my working life. My ability to overcome roadblocks in my learning has been aided with my ability to communicate with others on forums. I feel as though my excellent communication skills would translate incredibly well into a collaborative enviroment.</p>
+		</div>
+		<div class="point-wrapper">
+			<h2> Latest Tech</h2>
+			<p>When learning core technologies and libraries, I try my very best to ensure I am using the latest methedologies brought along by the latest versions of web development technologies. I am currently looking into ways to optimise my work flow such as more effective uses for CSS variables and writing less Javascript to achieve the same results. </p>
+		</div>
+	</div>
+	<div id="pic-and-about-wrapper">
+		<img id="img-ben">
+		<h1 id="ben-about-header"> A bit more about me</h1>
+		<p id="about-me-text"> I'm a recent history graduate from the University of Worcester, although my degree is not in computer science I have developed a passion for technology and web development during university. I am incredibly driven and have been teaching myself front end web development. Now I'm looking for an employer that will support my continued growth in a commercial enviroment, in return I will bring genuine enthusiasm and the ability to learn and adapt to quickly become a valuable member of a development team.</p>
+	</div>
+</section>
+
+<!--Skills-->
+<section id="skills">
+	<h1 id="skills-header">Skills</h1>
+		<div id="skills-list">
+			<div class="skill-item" >
+				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png">
+				<h3 class="skill-heading">HTML</h3>
+				<p>I am able to effectively create structured layouts for my websites using the semantic elements added by HTML5. I am still learning the best practices in this regard and I am aiming to ensure my pages are as accessible as possible.</p>
+			</div>
+			<div class="skill-item">
+				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png">
+				<h3 class="skill-heading">CSS</h3>
+				<p>I have a solid understanding of how to style and manipulate content using CSS. I am continuing to develop my skills with flexbox and CSS grid to create responsive layouts. I am currently learning how CSS variables work and will integrate them into my future work flow.</p>
+			</div>
+			<div class="skill-item">
+				<img src="https://png.icons8.com/color/1600/bootstrap.png">
+				<h3 class="skill-heading">Bootstrap</h3>
+				<p>I understand how the Bootstrap library works, although I prefer vanilla CSS I see the merit in the library and I find Bootstrap to be highly useful when styling Javascript applications. </p>
+			</div>
+			<div class="skill-item">
+				<img src="https://upload.wikimedia.org/wikipedia/commons/d/dc/Javascript-shield.png">
+				<h3 class="skill-heading">Javascript</h3>
+				<p>I have grasped the fundamental concepts of Javascript such as Functions, arrays, DOM manipulation and loops. I am able to store useful data and I aim to keep my code as dry as possible.</p>
+			</div>
+			<div class="skill-item last">
+				<img src="http://pluspng.com/img-png/jquery-logo-png--800.gif">
+				<h3 class="skill-heading">jQuery</h3>
+				<p>Although I am only beggining to learn jQuery's capabilities, I can already see how powerful of a tool it can be. (The smooth scroll on this page is done with jQuery). I am hoping to continually develop my understanding of jQuery's capabilities in order to effectively make use of the library.</p>
+			</div>
+		</div>
+</section>
+
+<!--Projects-->
+<section id="projects">
+	<h1>Projects</h1>
+	<div id="projects-display-container"> <!-- maybe add a placeholder class too --> 
+		<div class="project-container">
+			<a class = "project-heading" href="#">RGB guessing game</a>
+				<p>This game is built purely with Javascript, it generates random colors based on the rgb scale and displays
+				an amount depending on the selected difficulty.
+				</p>
+			<a href="#"><i class="fab fa-github"></i></a>
+		</div>
+		<div class="project-container">
+			<a class = "project-heading" href="#">Timed typing game</a>
+				<p>This game is also built with pure Javascript. The game chooses random words from an array and the player must
+				type out the word in a given amount of time based on the chosen difficulty.
+				</p>
+			<a href="#"><i class="fab fa-github"></i></a>
+		</div>
+		<div class="project-container">
+			<a class = "project-heading" href="#">Startup page</a>
+			<p>This is a simple responsive landing page built using the Bootstrap library. The content changes based on the screen size
+			and is mobile friendly.</p>
+			<a href="#"><i class="fab fa-github"></i></a>
+		</div>
+		<div class="project-container">
+			<a class = "project-heading" href="#">Pigeon marketplace</a>
+			<p>This page is built using a mixture of CSS grid and flexbox. I aimed to use semantic HTML. As I learn more technology
+			I am hoping to add features that make the page act as a functioning store page.</p>
+			<a href="#"><i class="fab fa-github"></i></a>
+		</div>
+	</div>
+</section>
+
+ <!-- Contact and links to other pages -->
+ <section id="contact">
+ 	<h1>Contact</h1>
+ 	<p>Interested or have any questions? Feel free to get in touch with me via the methods below. </p>
+ 	<p>Mobile: 07791 585581</p>
+ 	<p>Email: Ben_Wells18@outlook.com</p>
+ </section>
+ <!-- Social media contacts -->
+  <footer>
+  	<div id="social-media-container">
+  		<div class="social-media-button"> 
+  			<a href="https://www.linkedin.com/in/ben-w-858a11167/"
+  			target="about_blank">
+  				<i class="fab fa-linkedin"></i>
+  			</a>
+  		</div>
+  		<div class="social-media-button">
+  			<a href="">
+  		 		<i class="fab fa-instagram"></i>
+  		 	</a>
+  		</div>
+  		<div class="social-media-button">
+  			<a href="https://github.com/Ben-Wells18" target="about_blank">
+  				<i class="fab fa-github"></i> 
+  			</a> 
+  		</div>
+  	</div>
+  	<div id="bottom-content">
+  	<p> Ben Wells 2018</p>
+  	</div>
+  	
+  </footer>
+</main>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+  <!-- For smooth link scrolling -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-localScroll/2.0.0/jquery.localScroll.js"></script>
+ <script 
+  src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.js"></script>
+  <!-- Javascript code -->
+<script type="text/javascript" src="portfolio.js"></script>
+</body>
+</html>
