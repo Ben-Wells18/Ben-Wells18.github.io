@@ -6,7 +6,7 @@ font-family: 'Oswald', sans-serif; - headings*/
 
 a a:hover, a:focus, a:active, a:visited { /*removes default browser link colors*/
       text-decoration: none;
-      color: rgb(0, 0, 0);
+      color: inherit;
  }
 
 body{
