@@ -9,6 +9,10 @@ a a:hover, a:focus, a:active, a:visited { /*removes default browser link colors*
       color: inherit;
  }
 
+ a:-webkit-any-{
+ 	color: inherit;
+ }
+
 body{
 	font-family: 'Raleway' , sans-serif;
 }
